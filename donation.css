@@ -2,7 +2,7 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: white;
+    background: radial-gradient(circle, #abcafc, #f8aaaa);
 }
 
  h2, p {
@@ -128,7 +128,7 @@ header p {
 /* Donation Form Styles */
 .donation-section {
     padding: 50px 20px;
-    background-color: white;
+   background: radial-gradient(circle, #abcafc, #f8aaaa);
     text-align: center;
 }
 
@@ -214,6 +214,6 @@ a:-webkit-any-link {
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #ffffff;
+   background-color: #f4b3bd;
     color: #141414;
 }
