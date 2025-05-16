@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Directory</title>
+    <link rel="stylesheet" href="styles21.css">
+</head>
+<body>
+    <header>
+        <h1>Alumni Directory</h1>
+        <p>Find and connect with alumni based on various criteria.</p>
+    </header>
+
+    <main>
+        <section class="search-bar">
+            <input type="text" id="searchName" placeholder="Search by name">
+            <input type="text" id="searchYear" placeholder="Graduation Year">
+            <input type="text" id="searchField" placeholder="Field of Study">
+            <input type="text" id="searchIndustry" placeholder="Industry">
+            <input type="text" id="searchLocation" placeholder="Location">
+            <button id="searchBtn">Search</button>
+        </section>
+
+        <section class="filter-bar">
+            <h2>Filter by Interest</h2>
+            <label for="filterField">Field of Study:</label>
+            <select id="filterField">
+                <option value="">--Select--</option>
+                <option value="Computer Science">Computer Science</option>
+                <option value="Business">Business</option>
+                <!-- Add more options as needed -->
+            </select>
+
+            <label for="filterIndustry">Industry:</label>
+            <select id="filterIndustry">
+                <option value="">--Select--</option>
+                <option value="Technology">Technology</option>
+                <option value="Finance">Finance</option>            </select>
+        </section>
+
+        <section class="alumni-list">
+            <h2>Alumni List</h2>
+            <ul id="directory">
+                <li class="alumni-item">
+                    <img src="default-photo.jpg" alt="Photo of Jane Doe" class="alumni-photo">
+                    <div class="alumni-info">
+                        <h3>Jane Doe</h3>
+                        <p>Graduation Year: 2010</p>
+                        <p>Field of Study: Computer Science</p>
+                        <p>Industry: Technology</p>
+                        <p>Location: New York, NY</p>
+                        <button class="follow-btn">Follow</button>
+                        <button class="message-btn">Message</button>
+                    </div>
+                </li>
+                <li class="alumni-item">
+                    <img src="default-photo.jpg" alt="Photo of John Smith" class="alumni-photo">
+                    <div class="alumni-info">
+                        <h3>John Smith</h3>
+                        <p>Graduation Year: 2012</p>
+                        <p>Field of Study: Business</p>
+                        <p>Industry: Finance</p>
+                        <p>Location: San Francisco, CA</p>
+                        <button class="follow-btn">Follow</button>
+                        <button class="message-btn">Message</button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="add-profile">
+            <h2>Add New Profile</h2>
+            <form id="addProfileForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+
+                <label for="year">Graduation Year:</label>
+                <input type="number" id="year" required>
+
+                <label for="field">Field of Study:</label>
+                <input type="text" id="field" required>
+
+                <label for="industry">Industry:</label>
+                <input type="text" id="industry" required>
+
+                <label for="location">Location:</label>
+                <input type="text" id="location" required>
+
+                <label for="photo">Photo URL:</label>
+                <input type="url" id="photo">
+
+                <button type="submit">Add Profile</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Alumni Association</p>
+    </footer>
+
+    <script src="scripts21.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Registration</title>
+    <link rel="stylesheet" href="styles33.css">
+</head>
+<body>
+    <h1>Alumni Registration</h1>
+    <div class="container">
+        <form id="registration-form" action="/submit_registration" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="your name" required>
+            </div>
+            <div class="form-group">
+                <label for="photo">Profile Photo:</label>
+                <input type="file" id="photo" name="photo" accept="image/*" onchange="previewPhoto()">
+                <img id="photo-preview" src="" alt="Photo Preview" style="display:none;">
+            </div>
+            <div class="form-group">
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" placeholder="City">
+            </div>
+            <div class="form-group">
+                <label for="state">State:</label>
+                <input type="text" id="state" name="state" placeholder="State">
+            </div>
+            <div class="form-group">
+                <label for="graduation-year">Graduation Year:</label>
+                <input type="text" id="graduation-year" name="graduation_year" placeholder="2021">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="email@gmail.com">
+            </div>
+            <div class="form-group">
+                <label for="linkedin">LinkedIn Profile:</label>
+                <input type="text" id="linkedin" name="linkedin" placeholder="Profile link">
+            </div>
+            <div class="form-group">
+                <label for="bio">Bio:</label>
+                <textarea id="bio" name="bio" rows="4" placeholder="Tell us about you"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Register</button>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <div class="container1">
+            <p>&copy; 2024 Alumni Association. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts33.js"></script>
+</body>
+</html>

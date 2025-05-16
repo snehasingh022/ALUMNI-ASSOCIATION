@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.search-bar, .filter-bar, .add-profile {
+    padding: 1em;
+    text-align: center;
+}
+
+.search-bar input, .add-profile input {
+    padding: 0.5em;
+    margin: 0.2em;
+    width: 18%;
+    max-width: 300px;
+    font-size: 1em;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+button {
+    padding: 0.5em 1em;
+    margin: 0.5em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.search-bar button, .add-profile button {
+    background-color: #007bff;
+    color: white;
+}
+
+.follow-btn {
+    background-color: #007bff;
+    color: white;
+}
+
+.message-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.alumni-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.alumni-list h2 {
+    text-align: center;
+}
+
+.alumni-item {
+    background: white;
+    padding: 1em;
+    margin: 1em 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+.alumni-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 1em;
+}
+
+.alumni-info {
+    flex: 1;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

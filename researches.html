@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renowned Researches</title>
+    <link rel="stylesheet" href="styles3.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Renowned Researches</h1>
+            <p>Explore groundbreaking research projects and contribute your own.</p>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <section class="research-display">
+                <h2>Research Projects</h2>
+                <div class="research-list" id="researchList">
+                </div>
+            </section>
+
+            <section class="add-research">
+                <h2>Add New Research Project</h2>
+                <form id="addResearchForm">
+                    <label for="researchTitle">Research Title:</label>
+                    <input type="text" id="researchTitle" name="researchTitle" placeholder="Cutting-edge AI Algorithms" required>
+
+                    <label for="researchDescription">Description:</label>
+                    <textarea id="researchDescription" name="researchDescription" placeholder="Describe the research project..." rows="4" required></textarea>
+
+                    <label for="researchImage">Upload Image:</label>
+                    <input type="file" id="researchImage" name="researchImage" accept="image/*">
+                    <div id="imagePreview" class="file-preview">
+                        <p>No image selected</p>
+                    </div>
+
+                    <button type="submit">Add Research</button>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Research Association. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="scripts3.js"></script>
+</body>
+</html>

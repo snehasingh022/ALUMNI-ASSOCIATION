@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Your Success Story</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Alumni Success Stories</h1>
+            <p>Share your success story with us! We would love to hear about your achievements.</p>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <section class="story-form">
+                <h2>Submit Your research</h2>
+                <form id="successStoryForm" enctype="multipart/form-data">
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="John Doe" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="john.doe@example.com" required>
+
+                    <label for="storyTitle">research title:</label>
+                    <input type="text" id="storyTitle" name="storyTitle" placeholder="My Incredible Journey" required>
+
+                    <label for="storyDescription">Description about research:</label>
+                    <textarea id="storyDescription" name="storyDescription" placeholder="Describe your success story..." rows="4" required></textarea>
+
+                    <label for="storyImage">Upload Image:</label>
+                    <input type="file" id="storyImage" name="storyImage" accept="image/*">
+                    <div id="imagePreview" class="file-preview">
+                        <p>No image selected</p>
+                    </div>
+
+                    <label for="storyVideo">Upload Video:</label>
+                    <input type="file" id="storyVideo" name="storyVideo" accept="video/*">
+                    <div id="videoPreview" class="file-preview">
+                        <p>No video selected</p>
+                    </div>
+
+                    <button type="submit">Submit research</button>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Alumni Association. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="scripts1.js"></script>
+</body>
+</html>

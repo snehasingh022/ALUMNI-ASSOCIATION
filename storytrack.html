@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Success Stories</title>
+    <link rel="stylesheet" href="storytrack.css">
+</head>
+<body>
+    <header>
+        <h1>Alumni Success Stories</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Add New Success Story</h2>
+            <form id="storyForm">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Name">
+
+                <label for="story">Success Story:</label>
+                <textarea id="story" name="story" rows="4" placeholder="Ur story..." required></textarea>
+
+                <label for="photo">Upload Photo:</label>
+                <input type="file" id="photo" name="photo" accept="image/*">
+                <img id="photoPreview" src="#" alt="Photo Preview" style="display:none;">
+
+                <label for="video">Upload Video:</label>
+                <input type="file" id="video" name="video" accept="video/*">
+                <video id="videoPreview" controls style="display:none;"></video>
+
+                <button type="submit">Add Story</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Success Stories</h2>
+            <div id="storiesDirectory"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Alumni Association. All rights reserved.</p>
+    </footer>
+
+    <script src="storytrack.js"></script>
+</body>
+</html>

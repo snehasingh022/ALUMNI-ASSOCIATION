@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Donation Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Alumni Association Donation Portal</h1>
+    </header>
+
+    <section class="donation-form-section">
+        <form id="donation-form">
+            <h2>Give Back to Support Future Generations</h2>
+
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="amount">Donation Amount (USD):</label>
+            <input type="number" id="amount" name="amount" placeholder="Enter donation amount" required>
+
+            <label for="message">Message (Optional):</label>
+            <textarea id="message" name="message" placeholder="Write a message (optional)"></textarea>
+
+            <label for="payment-method">Payment Method:</label>
+            <select id="payment-method" name="payment-method">
+                <option value="credit-card">Credit Card</option>
+                <option value="paypal">PayPal</option>
+                <option value="paypal">PayTm</option>
+                <option value="bank-transfer">Bank Transfer</option>
+            </select>
+
+            <button type="submit">Donate Now</button>
+        </form>
+    </section>
+
+    <div id="donation-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Donation Successful</h3>
+            <p>Thank you for your generosity! Your contribution helps shape the future of our community.</p>
+            <button id="close-modal">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

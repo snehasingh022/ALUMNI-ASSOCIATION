@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Directory</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Alumni Directory</h1>
+            <p>Explore our alumni and share your own story!</p>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <section class="directory">
+                <h2>Alumni Profiles</h2>
+                <div class="profile-list" id="profileList">
+                </div>
+            </section>
+            
+            <section class="add-profile">
+                <h2>Add New Alumni Story</h2>
+                <form id="addProfileForm">
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="John Doe" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="john.doe@example.com" required>
+                    
+                    <label for="storyTitle">Story Title:</label>
+                    <input type="text" id="storyTitle" name="storyTitle" placeholder="My Incredible Journey" required>
+                    
+                    <label for="storyDescription">Story Description:</label>
+                    <textarea id="storyDescription" name="storyDescription" placeholder="Describe your success story..." rows="4" required></textarea>
+                    
+                    <label for="storyImage">Upload Image:</label>
+                    <input type="file" id="storyImage" name="storyImage" accept="image/*">
+                    <div id="imagePreview" class="file-preview">
+                        <p>No image selected</p>
+                    </div>
+                    
+                    <label for="storyVideo">Upload Video:</label>
+                    <input type="file" id="storyVideo" name="storyVideo" accept="video/*">
+                    <div id="videoPreview" class="file-preview">
+                        <p>No video selected</p>
+                    </div>
+                    
+                    <button type="submit">Add Profile</button>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Alumni Association. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="scripts2.js"></script>
+</body>
+</html>

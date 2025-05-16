@@ -1,0 +1,161 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(135deg, #f26d6d, #7ac5f7);
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+    border-bottom: 5px solid #fea8a8;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Main Content Styles */
+main {
+    padding: 2rem 0;
+}
+
+.research-display, .add-research {
+    margin-bottom: 2rem;
+}
+
+.research-display h2, .add-research h2 {
+    margin-bottom: 1rem;
+    color: #004d99;
+}
+
+.research-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.research-card {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 1rem);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.research-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.research-card h3 {
+    margin-bottom: 0.5rem;
+    color: #0a5199;
+}
+
+.research-card p {
+    margin-bottom: 1rem;
+    color: #666;
+}
+
+.research-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Add Research Form Styles */
+.add-research form {
+    background: #fdd1d1;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.add-research label {
+    display: block;
+    margin: 0.5rem 0 0.2rem;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: #0099ff;
+    outline: none;
+}
+
+button {
+    background-color: #0670d9fa;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #003d7a;
+}
+
+/* File Preview Styles */
+.file-preview {
+    width: 100%;
+    height: 200px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+    margin-bottom: 1rem;
+}
+
+.file-preview img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Footer Styles */
+footer {
+    background: #fea8a8;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    border-top: 5px solid #fea8a8;
+}

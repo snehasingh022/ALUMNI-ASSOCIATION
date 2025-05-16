@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fbfbfce2;
+}
+.container {
+    max-width: 1800px;
+    margin: 10px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+/* h1 {
+    text-align: center;
+    color: #fff;
+    background-color: #007bff;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+} */
+h1 {
+    background: linear-gradient(135deg, #fb5858, #6abef7);
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+    border-bottom: 5px solid #003d7a;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+.form-group input[type="text"], 
+.form-group input[type="email"], 
+.form-group input[type="url"], 
+.form-group input[type="file"], 
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.form-group input[type="file"] {
+    padding: 0;
+}
+.photo-preview {
+    margin-top: 10px;
+    text-align: center;
+}
+.photo-preview img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+.bio-section {
+    padding: 15px;
+    background-color: #f9f9f9;
+    margin-top: 20px;
+}
+.bio-section h2 {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin: -15px -15px 15px;
+}
+.form-group button {
+    background-color: #FF6363;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+}
+.form-group button:hover {
+    background-color: #FF6363;
+}
+.form-group textarea {
+    resize: vertical;
+}
+footer {
+    background: #f08686;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    border-top: 5px solid #f77d7d;
+}

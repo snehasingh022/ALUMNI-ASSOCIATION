@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Registration</title>
+    <link rel="stylesheet" href="styles11.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>For students</h1>
+            <p>Reconnect with your alma mater by registering here!</p>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <section class="registration-form">
+                <h2>Register Here</h2>
+                <form id="alumniForm">
+                    <div class="photo-upload">
+                        <label for="profilePhoto">Profile Photo:</label>
+                        <input type="file" id="profilePhoto" name="profilePhoto" accept="image/*">
+                        <div id="photoPreview" class="photo-preview">
+                            <p>No photo selected</p>
+                        </div>
+                    </div>
+
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="your name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="email@example.com" required>
+
+                    <label for="graduationYear">Graduation year :</label>
+                    <input type="number" id="graduationYear" name="graduationYear" placeholder="2027" required>
+
+                    <label for="degree">Degree:</label>
+                    <input type="text" id="degree" name="degree" placeholder="Degree Name" required>
+
+                    <label for="bio">Short Bio:</label>
+                    <textarea id="bio" name="bio" placeholder="Tell us about yourself..." rows="4" required></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Alumni Association. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="scripts11.js"></script>
+</body>
+</html>
